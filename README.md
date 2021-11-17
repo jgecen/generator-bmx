@@ -1,4 +1,4 @@
-## Only Development Setup
+## Development Setup Only
 
 ```
 > git clone https://github.com/jgecen/generator-bmx.git
