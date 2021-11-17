@@ -29,42 +29,42 @@ module.exports = class extends Generator {
     var options = { entityName: this.props.entityName }
 
     this.fs.copyTpl(
-      this.templatePath('_Controller.java_'),
+      this.templatePath('Controller.tpl'),
       this.destinationPath(
         `generators/app/draft/${this.props.entityName}Controller.java`
       ),
       options
     )
     this.fs.copyTpl(
-      this.templatePath('_Data.java_'),
+      this.templatePath('Data.tpl'),
       this.destinationPath(
         `generators/app/draft/${this.props.entityName}Data.java`
       ),
       options
     )
     this.fs.copyTpl(
-      this.templatePath('_Repository.java_'),
+      this.templatePath('Repository.tpl'),
       this.destinationPath(
         `generators/app/draft/${this.props.entityName}Repository.java`
       ),
       options
     )
     this.fs.copyTpl(
-      this.templatePath('_Request.java_'),
+      this.templatePath('Request.tpl'),
       this.destinationPath(
         `generators/app/draft/${this.props.entityName}Request.java`
       ),
       options
     )
     this.fs.copyTpl(
-      this.templatePath('_Response.java_'),
+      this.templatePath('Response.tpl'),
       this.destinationPath(
         `generators/app/draft/${this.props.entityName}Response.java`
       ),
       options
     )
     this.fs.copyTpl(
-      this.templatePath('_Service.java_'),
+      this.templatePath('Service.tpl'),
       this.destinationPath(
         `generators/app/draft/${this.props.entityName}Service.java`
       ),
